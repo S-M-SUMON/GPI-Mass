@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* ========================================Header.php=================================== */
+
+.header {
+    background-color: #1167fc;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.headers_menu {
+    background-color: black;
+    height: 37px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.header-menu{
+    text-align: center;
+}
+
+.header-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.header-menu ul li{
+    float: left;
+    list-style: none;
+}
+
+.header-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 20px;
+
+}
+
+.header-menu ul li a:hover {
+    background-color: #1167fc;
+}

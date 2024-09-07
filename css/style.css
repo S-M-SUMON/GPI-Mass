@@ -1,0 +1,707 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* ========================================Header.php=================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #333;
+    color: white;
+}
+
+.left-section h1{
+    height: 40px;
+    color: white;
+}
+
+.right-section .logout-button {
+    background-color:#333 ;
+    color: white;
+    border: none;
+    
+}
+.right-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* ========================================Header.php menu=================================== */
+.menu {
+    background-color: #6c6c6c;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center; /* Center the menu items */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.menu ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* ========================================users.php header and addbutton =================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 50px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+
+/* ========================================users.php table =================================== */
+.header button{
+    padding: 10px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header button:hover {
+    background-color: #218838;
+}
+
+.header a{
+    padding: 10px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header a:hover {
+    background-color: #218838;
+}
+
+
+#table-container {
+    margin-top: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+
+#user-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom:20px;
+    text-align: center;
+    
+}
+
+.table-header tr th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table-body tr td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+/* .table-body{
+    padding-bottom: 20px;
+} */
+
+.table-body tr:hover {
+    background-color: #f1f1f1;
+}
+
+ .delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit_a{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+
+.edit_a:hover {
+    background-color: #0056b3;
+}
+
+.deleat_a{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #e60d0d;
+    color: white;
+    text-decoration: none;
+}
+.deleat_a:hover {
+    background-color: #a30000;
+}
+
+
+
+
+/* ========================================add_user.php from=================================== */
+
+.form-container {
+    padding-top: 50px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.form-input,
+.form-textarea,
+.form-select,
+.form-input-file {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-end;
+}
+
+.form-button:hover {
+    background-color: #218838;
+}
+
+
+/* ========================================category.php table=================================== */
+
+.category-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.category-header tr th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    
+}
+
+.category-body tr td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.category-body tr:hover {
+    background-color: #f1f1f1;
+}
+
+.category-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.category-edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.category-edit-button:hover {
+    background-color: #0056b3;
+}
+
+.category-delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.category-delete-button:hover {
+    background-color: #c82333;
+}
+
+/* ========================================post.php table=================================== */
+.post-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.post-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.post-header tr th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.post-body tr td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.post-body .post-body-row:hover {
+    background-color: #f1f1f1;
+}
+
+.post-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.post-edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.post-edit-button:hover {
+    background-color: #0056b3;
+}
+
+.post-delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.post-delete-button:hover {
+    background-color: #c82333;
+}
+
+/* ========================================add_category.php table=================================== */
+.add_category_container {
+    max-width:80% ;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add_category_form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the form title */
+.add_category_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for the label */
+.add_category_label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Styling for the input field */
+.add_category_input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the submit button */
+.add_category_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add_category_button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ========================================add_user.php table=================================== */
+.user_container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form */
+.add_user_form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the form title */
+.add_user_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for the label */
+.add_user_label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Styling for the input fields */
+.add_user_input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the select dropdown */
+.add_user_select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the submit button */
+.add_user_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add_user_button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ========================================login.php table=================================== */
+
+#loging_section{
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+
+}
+
+#loging_section div{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#loging_section input{
+    width: 98%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+#loging_section div button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#loging_section button:hover {
+    background-color: #0056b3;
+}
+
+#loging_section form div p{
+    color: red;
+    text-align: center;
+}
+
+.week_table {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.week_table table{
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+.week_table caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.week_table th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+}
+.week_table tr:hover th {
+    background-color: #45a049;
+}
+
+
+.weekly_form_section{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px 50px;
+}
+.weekly_form{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 5px;
+    width: auto;
+    align-items: center;
+}
+
+
+.form-weekly_form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    width: 60px;
+}
+.weekly_form_section button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #218838;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.weekly_form_section button:hover{
+    background-color: #006c17; 
+}
+
+.cost_button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #218838;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.cost_button:hover{
+    background-color: #006c17; 
+}
+#view_user_from_tr td input{
+    border: none;
+    width: 20px;
+}
+
+.total_cost{
+    padding: 20px;
+}
+.total_cost input{
+    padding: 5px;
+    margin: 0;
+    border-radius: 5px;
+}
+.total_cost button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: #4CAF50;
+}
+
+.total_cost button:hover{
+   
+    background-color: #33d638;
+}
+#input td input{
+     border: none;
+     color: #006c17;
+     padding: 5px;
+     font-size: 15px;
+     text-align: center;
+
+}
+
+#input td input:focus {
+    border: none;
+    outline: none;
+
+}
+
+
+
+
+.table-headeran tr th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table-bodyan tr td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+/* .table-body{
+    padding-bottom: 20px;
+} */
+
+#view_footer tr{
+    margin-top: 20px;
+    padding: 20px;
+}
+#view_footer button{
+    background-color: #218838;
+    border: none;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 5px;
+}
+#view_footer button:hover{
+    background-color: #0c571c;
+
+}
