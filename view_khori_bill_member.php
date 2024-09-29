@@ -1,6 +1,7 @@
 <?php 
     include './master/header.php';
     include "./admin/config/config.php";
+    include "./admin/url/config.php";
     
     if (isset($_GET['viewid'])) {
         $viewid = $_GET['viewid'];
@@ -42,7 +43,7 @@
             }
         }
 
-        header("location: http://localhost/mass_management/admin/khori_bill/view_khori_bill_member.php?viewid=$viewid&month=$month");
+        header("location: $url_link/admin/khori_bill/view_khori_bill_member.php?viewid=$viewid&month=$month");
     }
 ?>
 
@@ -84,7 +85,7 @@
             if($name){
                 $insert = "INSERT INTO khori_bill (name,month_name,auth_id,pament_date) VALUES ('$name','$month','$viewid','$date')";
                 mysqli_query($conn, $insert);
-                header("location: http://localhost/mass_management/admin/khori_bill/view_khori_bill_member.php?viewid=$viewid&month=$month");
+                header("location: $url_link/admin/khori_bill/view_khori_bill_member.php?viewid=$viewid&month=$month");
             }else{
                 echo "Type Name";
             }

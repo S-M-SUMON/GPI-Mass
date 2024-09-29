@@ -1,8 +1,9 @@
 <?php 
+include "../url/config.php";
 session_start();
 
 if(!isset($_SESSION['user_id'])){
-    header("location: http://localhost/mass_management/admin/");
+    header("location: $url_link/admin/");
 }
 
 
@@ -32,7 +33,7 @@ if(!isset($_SESSION['user_id'])){
         <?php 
             if($_SESSION['user_role'] ==1){
         ?>
-            <li><a href="../user/users.php">Users</a></li>
+            <li><a href="../user/users.php">Manager</a></li>
             <li><a href="../aunty_bill/aunty_bill.php">Aunty Bill</a></li>
             <li><a href="../khori_bill/khori_bill.php">Khori Bill</a></li>
             <li><a href="../../">Go Web Site</a></li>
@@ -41,7 +42,7 @@ if(!isset($_SESSION['user_id'])){
         <?php   
             if($_SESSION['user_role'] ==2){
         ?>
-            <li><a href="../user/users.php">Users</a></li>
+            <li><a href="../user/users.php">Manager</a></li>
             <li><a href="../../">Go Web Site</a></li>
 
         <?php }?>

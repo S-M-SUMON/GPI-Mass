@@ -1,6 +1,7 @@
 <?php 
     include './master/header.php';
     include "./admin/config/config.php";
+    include "./admin/url/config.php";
     
     if (isset($_GET['viewid'])) {
         $viewid = $_GET['viewid'];
@@ -42,7 +43,7 @@
             }
         }
 
-        header("location: http://localhost/mass_management/admin/aunty_bill/view_aunty_bill_member.php?viewid=$viewid&month=$month");
+        header("location: $url_link/admin/aunty_bill/view_aunty_bill_member.php?viewid=$viewid&month=$month");
     }
 ?>
 

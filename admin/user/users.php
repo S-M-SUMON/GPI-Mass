@@ -1,8 +1,9 @@
 <?php 
     include '../master/header.php';
+    include "../url/config.php";
 
     if(!isset($_SESSION['user_id'])){
-        header("location: http://localhost/mass_management/admin/");
+        header("location: $url_link/admin/");
     }
 ?>
 

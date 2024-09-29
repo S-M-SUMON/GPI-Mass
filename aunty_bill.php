@@ -1,6 +1,7 @@
 <?php 
        include './master/header.php';
        include "./admin/config/config.php";
+       include "./admin/url/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +27,7 @@
             $time = time();
             $add_month = "INSERT INTO aunty_bill_month(month_name,date,time) VALUES('$month','$date','$time')";
             mysqli_query($conn,$add_month);
-            header("location: http://localhost/mass_management/admin/aunty_bill/aunty_bill.php");
+            header("location: $url_link/admin/aunty_bill/aunty_bill.php");
         }
 
     

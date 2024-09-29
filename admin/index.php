@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+include "./url/config.php";
 
 ?>
 <!DOCTYPE html>
@@ -62,20 +62,20 @@ session_start();
 
                     // header("location: http://localhost/mass_management/admin/user/users.php");
                     if($_SESSION['user_role'] == 1){
-                        header("location: http://localhost/mass_management/admin/user/users.php");
+                        header("location: $url_link/admin/user/users.php");
                     }else if($_SESSION['user_role'] == 2){
-                        header("location: http://localhost/mass_management/admin/user/users.php");
+                        header("location: $url_link/admin/user/users.php");
                     }else if($_SESSION['user_role'] == 3){
-                        header("location: http://localhost/mass_management/admin/aunty_bill/aunty_bill.php");
+                        header("location: $url_link/admin/aunty_bill/aunty_bill.php");
                     }else if($_SESSION['user_role'] == 4){
-                        header("location: http://localhost/mass_management/admin/khori_bill/khori_bill.php");
+                        header("location: $url_link/admin/khori_bill/khori_bill.php");
                     }
 
                 }
 
             }else{
                 $_SESSION['error'] = 'User and Password not Matched';
-                header("location: http://localhost/mass_management/admin/index.php");
+                header("location: $url_link/admin/index.php");
             }
 
 

@@ -1,4 +1,5 @@
 <?php 
+    include "../url/config.php";
     if(isset($_POST['update_edit_member'])){
             $_id = $_POST['am_id'];
 
@@ -25,7 +26,7 @@
             
             $result = mysqli_query($conn,$sql);
             // header("location: http://localhost/mass_management/admin/edit_view_user_details/edit_view_user_details.php?edit_id=$_id");
-            header("location: http://localhost/mass_management/admin/view_user_details/view_user_details.php?user_id=$user_id&user_name=$user_name&user_time=$user_time");
+            header("location: $url_link/admin/view_user_details/view_user_details.php?user_id=$user_id&user_name=$user_name&user_time=$user_time");
 
 
     }

@@ -1,5 +1,5 @@
 <?php 
-
+    include "../url/config.php";
     require "../config/config.php";
     if(isset($_POST['update_cost'])){
             $_id = $_GET['cost_id'];
@@ -19,7 +19,7 @@
 
             $result = mysqli_query($conn,$updatw_cost);
 
-            header("location: http://localhost/mass_management/admin/total_cost/total_cost.php?user_id=$user_id&user_name=$user_name&user_time=$user_time");
+            header("location: $url_link/admin/total_cost/total_cost.php?user_id=$user_id&user_name=$user_name&user_time=$user_time");
             
     }
 

@@ -1,6 +1,7 @@
 <?php 
     include "../master/header.php";
     include "../config/config.php";
+    include "../url/config.php";
     
     if (isset($_GET['viewid'])) {
         $viewid = $_GET['viewid'];
@@ -42,7 +43,7 @@
             }
         }
 
-        header("location: http://localhost/mass_management/admin/aunty_bill/view_aunty_bill_member.php?viewid=$viewid&month=$month");
+        header("location: $url_link/admin/aunty_bill/view_aunty_bill_member.php?viewid=$viewid&month=$month");
     }
 ?>
 
@@ -88,7 +89,7 @@
             if($name){
                 $insert = "INSERT INTO aunty_bill (name,month_name,auth_id,pament_date) VALUES ('$name','$month','$viewid','$date')";
                 mysqli_query($conn, $insert);
-                header("location: http://localhost/mass_management/admin/aunty_bill/view_aunty_bill_member.php?viewid=$viewid&month=$month");
+                header("location: $url_link/admin/aunty_bill/view_aunty_bill_member.php?viewid=$viewid&month=$month");
             }else{
                 echo "Type Name";
             }

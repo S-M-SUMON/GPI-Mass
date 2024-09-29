@@ -1,4 +1,5 @@
 <?php 
+    include "../url/config.php";
     if(isset($_POST['add_user'])){
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
@@ -14,7 +15,7 @@
            $user = "INSERT INTO users(user_first_name,user_last_name,username,time,date,password,role)
                     VALUES('$firstName','$lastName','$username','$time','$date','$password','$userRole')";
             mysqli_query($conn,$user);
-            header("location: users.php");
+            header("location: $url_link/admin/user/users.php");
         }else{
             echo "plice Inter A Value";
         }

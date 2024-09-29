@@ -29,7 +29,7 @@ session_start();
 
     <nav class="menu">
         <ul>
-            <li><a href="./user.php">Users</a></li>
+            <li><a href="./user.php">Manager</a></li>
             <li><a href="./aunty_bill.php">Aunty Bill</a></li>
             <li><a href="./khori_bill.php">Khori Bill</a></li>
         </ul>
